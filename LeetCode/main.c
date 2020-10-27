@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
     coins[2] = 5;
     int coinsSize = 3;
     int amount = 11;
-    int result = coinChange(coins, coinsSize, amount);
+    int result = coinChange2(coins, coinsSize, amount);
     printf("coinChange result: %d \n", result);
     return 0;
 }

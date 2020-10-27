@@ -57,5 +57,17 @@ int coinChange1(int* coins, int coinsSize, int amount){
 
 #pragma mark - 方案三 dp数组迭代
 int coinChange2(int* coins, int coinsSize, int amount){
-    
+    int* dp = malloc((amount+1)*sizeof(int));
+    memset(dp, amount+1, (amount+1)*sizeof(int));
+    // base case
+    dp[0] = 0;
+    // 外层for循环遍历所有状态的所有取值
+    for (int i = 1; i <= amount; i++) {
+        // 内层for循环在求所有选择的最小值
+        for (int j = 0; j < coinsSize; j++) {
+            if(i - coins[j] < 0) continue;;
+            dp[i] = min(dp[i], 1+dp[i-coins[j]]);
+        }
+    }
+    return (dp[amount] == amount + 1) ? -1 : dp[amount];
 }
