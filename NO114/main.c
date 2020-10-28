@@ -21,12 +21,17 @@ int main(int argc, const char * argv[]) {
 
     TreeNode* node1 = createNode(1, node2, node5);
     
+    preOrderTraverse(node1);
+    printf("\n");
+    preOrderTraverse1(node1);
+    printf("\n");
 //    [1,null,2,3]
 //    TreeNode* node3 = createNode(3, NULL, NULL);
 //    TreeNode* node2 = createNode(2, node3, NULL);
 //
 //    TreeNode* node1 = createNode(1, NULL, node2);
 
-    flatten2(node1);
+//    flatten2(node1);
+    
     return 0;
 }
