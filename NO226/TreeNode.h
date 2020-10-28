@@ -10,4 +10,14 @@
 
 #include <stdio.h>
 
+typedef struct TreeNode TreeNode;
+
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+};
+
+TreeNode* createNode(int val, TreeNode* left, TreeNode* right);
+
 #endif /* TreeNode_h */
