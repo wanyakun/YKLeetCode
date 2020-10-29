@@ -10,9 +10,9 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    TreeNode* node3 = createNode(3, NULL, NULL);
-    TreeNode* node2 = createNode(2, node3, NULL);
-    TreeNode* node1 = createNode(1, NULL, node2);
+    TreeNode* node3 = createTreeNode(3, NULL, NULL);
+    TreeNode* node2 = createTreeNode(2, node3, NULL);
+    TreeNode* node1 = createTreeNode(1, NULL, node2);
     int returnSize = 0;
     int* result = preorderTraversal(node1, &returnSize);
     for (int i = 0; i < returnSize; i++) {

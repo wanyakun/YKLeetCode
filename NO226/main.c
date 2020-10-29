@@ -13,15 +13,15 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    TreeNode* node1 = createNode(1, NULL, NULL);
-    TreeNode* node3 = createNode(3, NULL, NULL);
-    TreeNode* node6 = createNode(6, NULL, NULL);
-    TreeNode* node9 = createNode(9, NULL, NULL);
+    TreeNode* node1 = createTreeNode(1, NULL, NULL);
+    TreeNode* node3 = createTreeNode(3, NULL, NULL);
+    TreeNode* node6 = createTreeNode(6, NULL, NULL);
+    TreeNode* node9 = createTreeNode(9, NULL, NULL);
 
-    TreeNode* node2 = createNode(2, node1, node3);
-    TreeNode* node7 = createNode(7, node6, node9);
+    TreeNode* node2 = createTreeNode(2, node1, node3);
+    TreeNode* node7 = createTreeNode(7, node6, node9);
     
-    TreeNode* root = createNode(4, node2, node7);
+    TreeNode* root = createTreeNode(4, node2, node7);
     
     TreeNode* result = invertTree1(root);
 

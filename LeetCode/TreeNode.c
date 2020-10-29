@@ -7,8 +7,9 @@
 
 #include <stdlib.h>
 #include "TreeNode.h"
+#include <stdio.h>
 
-TreeNode* createNode(int val, TreeNode* left, TreeNode* right) {
+TreeNode* createTreeNode(int val, TreeNode* left, TreeNode* right) {
     TreeNode* node = malloc(sizeof(TreeNode));
     node->val = val;
     node->left = left;
@@ -49,6 +50,27 @@ void preOrderTraverse1(TreeNode* root) {
             stk = realloc(stk, stk_top*sizeof(TreeNode));
             stk[stk_top-1] = curr->left;
         }
+    }
+}
+
+// 前序遍历，迭代
+void preOrderTraverse11(TreeNode* root) {
+    // base case
+    if (root == NULL) {
+        return;
+    }
+    TreeNode** stk = malloc(sizeof(TreeNode));
+    int stk_top = 0;
+    TreeNode* node = root;
+    while (stk_top > 0 || node != NULL) {
+        while (node != NULL) {
+            stk_top++;
+            stk = realloc(stk, stk_top*sizeof(TreeNode));
+            stk[stk_top-1] = node;
+            node = node->left;
+        }
+        node = stk[--stk_top];
+        node = node->right;
     }
 }
 

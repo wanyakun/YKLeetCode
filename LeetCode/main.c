@@ -6,9 +6,23 @@
 //
 
 #include <stdio.h>
+#include "TreeNode.h"
+#include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
+
+    //    [1,2,5,3,4,null,6]
+    TreeNode* node3 = createTreeNode(3, NULL, NULL);
+    TreeNode* node4 = createTreeNode(4, NULL, NULL);
+    TreeNode* node6 = createTreeNode(6, NULL, NULL);
+
+    TreeNode* node2 = createTreeNode(2, node3, node4);
+    TreeNode* node5 = createTreeNode(5, NULL, node6);
+
+    TreeNode* node1 = createTreeNode(1, node2, node5);
+
+    preOrderTraverse11(node1);
+    
     return 0;
 }

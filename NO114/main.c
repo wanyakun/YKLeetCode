@@ -12,14 +12,14 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
 //    [1,2,5,3,4,null,6]
-    TreeNode* node3 = createNode(3, NULL, NULL);
-    TreeNode* node4 = createNode(4, NULL, NULL);
-    TreeNode* node6 = createNode(6, NULL, NULL);
+    TreeNode* node3 = createTreeNode(3, NULL, NULL);
+    TreeNode* node4 = createTreeNode(4, NULL, NULL);
+    TreeNode* node6 = createTreeNode(6, NULL, NULL);
 
-    TreeNode* node2 = createNode(2, node3, node4);
-    TreeNode* node5 = createNode(5, NULL, node6);
+    TreeNode* node2 = createTreeNode(2, node3, node4);
+    TreeNode* node5 = createTreeNode(5, NULL, node6);
 
-    TreeNode* node1 = createNode(1, node2, node5);
+    TreeNode* node1 = createTreeNode(1, node2, node5);
     
     preOrderTraverse(node1);
     printf("\n");

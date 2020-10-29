@@ -8,8 +8,6 @@
 #ifndef TreeNode_h
 #define TreeNode_h
 
-#include <stdio.h>
-
 typedef struct TreeNode TreeNode;
 
 struct TreeNode {
@@ -18,9 +16,10 @@ struct TreeNode {
     TreeNode *right;
 };
 
-TreeNode* createNode(int val, TreeNode* left, TreeNode* right);
+TreeNode* createTreeNode(int val, TreeNode* left, TreeNode* right);
 void preOrderTraverse(TreeNode* root);
 void preOrderTraverse1(TreeNode* root);
+void preOrderTraverse11(TreeNode* root);
 void inOrderTravers(TreeNode* root);
 void postOrderTravers(TreeNode* root);
 
