@@ -25,6 +25,5 @@ int main(int argc, const char * argv[]) {
     
     TreeNode* result = invertTree1(root);
 
-    printPreOrderNode(result);
     return 0;
 }
