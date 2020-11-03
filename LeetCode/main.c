@@ -22,7 +22,33 @@ int main(int argc, const char * argv[]) {
 
     TreeNode* node1 = createTreeNode(1, node2, node5);
 
+    printf("前序遍历：");
+    preOrderTraverse(node1);
+    printf("\n");
+    
+    printf("前序遍历：");
     preOrderTraverse11(node1);
+    printf("\n");
+    
+    printf("中序遍历：");
+    inOrderTravers(node1);
+    printf("\n");
+
+    printf("中序遍历：");
+    inOrderTravers1(node1);
+    printf("\n");
+    
+    printf("后序遍历：");
+    postOrderTravers(node1);
+    printf("\n");
+    
+    printf("后序遍历：");
+    postOrderTravers1(node1);
+    printf("\n");
+    
+    printf("层次遍历：");
+    levelOrderTravers(node1);
+    printf("\n");
     
     return 0;
 }

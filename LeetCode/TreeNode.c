@@ -59,11 +59,12 @@ void preOrderTraverse11(TreeNode* root) {
     if (root == NULL) {
         return;
     }
-    TreeNode** stk = malloc(sizeof(TreeNode));
+    TreeNode** stk = malloc(0);
     int stk_top = 0;
     TreeNode* node = root;
     while (stk_top > 0 || node != NULL) {
         while (node != NULL) {
+            printf("%d", node->val);
             stk_top++;
             stk = realloc(stk, stk_top*sizeof(TreeNode));
             stk[stk_top-1] = node;
@@ -79,9 +80,30 @@ void inOrderTravers(TreeNode* root) {
     if (root == NULL) {
         return;
     }
-    preOrderTraverse(root->left);
+    inOrderTravers(root->left);
     printf("%d", root->val);
-    preOrderTraverse(root->right);
+    inOrderTravers(root->right);
+}
+
+void inOrderTravers1(TreeNode* root) {
+    // base case
+    if (root == NULL) {
+        return;
+    }
+    TreeNode** stk = malloc(sizeof(TreeNode));
+    int stk_top = 0;
+    TreeNode* node = root;
+    while (stk_top > 0 || node != NULL) {
+        while (node != NULL) {
+            stk_top++;
+            stk = realloc(stk, stk_top*sizeof(TreeNode));
+            stk[stk_top-1] = node;
+            node = node->left;
+        }
+        node = stk[--stk_top];
+        printf("%d", node->val);
+        node = node->right;
+    }
 }
 
 // 后续序遍历，递归
@@ -89,7 +111,63 @@ void postOrderTravers(TreeNode* root) {
     if (root == NULL) {
         return;
     }
-    preOrderTraverse(root->left);
-    preOrderTraverse(root->right);
+    postOrderTravers(root->left);
+    postOrderTravers(root->right);
     printf("%d", root->val);
+}
+
+void postOrderTravers1(TreeNode* root) {
+    // base case
+    if (root == NULL) {
+        return;
+    }
+    TreeNode** stk = malloc(sizeof(TreeNode));
+    int stk_top = 0;
+    TreeNode* node = root;
+    TreeNode* pre = NULL; // 记录上一次遍历的节点
+    while (stk_top > 0 || node != NULL) {
+        while (node != NULL) {
+            stk_top++;
+            stk = realloc(stk, stk_top*sizeof(TreeNode));
+            stk[stk_top-1] = node;
+            node = node->left;
+        }
+        node = stk[--stk_top];
+        if (node->right != NULL && node->right != pre) {
+            stk_top++;
+            stk = realloc(stk, stk_top*sizeof(TreeNode));
+            stk[stk_top-1] = node;
+            node = node->right;
+        } else {
+            printf("%d", node->val);
+            pre = node;
+            node = NULL;
+        }
+    }
+}
+
+void levelOrderTravers(TreeNode* root) {
+    // base case
+    if (root == NULL) {
+        return;
+    }
+    TreeNode** queue = malloc(sizeof(TreeNode));
+    int index = 0, length = 1; // 分别标示队列的下标和长度
+    queue[0] = root;
+    while(index < length) {
+        // 出队
+        TreeNode* node = queue[index];
+        printf("%d", node->val);
+        // 左节点入队
+        if (node->left != NULL) {
+            queue = realloc(queue, (++length)*sizeof(TreeNode));
+            queue[length-1] = node->left;
+        }
+        // 右节点入队
+        if (node->right != NULL) {
+            queue = realloc(queue, (++length)*sizeof(TreeNode));
+            queue[length-1] = node->right;
+        }
+        index++;
+    }
 }

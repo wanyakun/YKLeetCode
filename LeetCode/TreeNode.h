@@ -21,6 +21,9 @@ void preOrderTraverse(TreeNode* root);
 void preOrderTraverse1(TreeNode* root);
 void preOrderTraverse11(TreeNode* root);
 void inOrderTravers(TreeNode* root);
+void inOrderTravers1(TreeNode* root);
 void postOrderTravers(TreeNode* root);
+void postOrderTravers1(TreeNode* root);
+void levelOrderTravers(TreeNode* root);
 
 #endif /* TreeNode_h */
