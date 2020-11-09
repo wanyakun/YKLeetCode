@@ -30,9 +30,15 @@ void backtrack(char*** res, int *returnSize, char** board, int n, int row) {
     // 触发结束条件
     if (row == n) {
         res = realloc(res, (++(*returnSize))*sizeof(char**));
-//        char** tmp = malloc(n*sizeof(char*));
-//        memcpy(tmp, board, n*n*sizeof(char));
-        res[(*returnSize) - 1] = board;
+        char** tmp = malloc(n*sizeof(char*));
+        for (int i = 0; i < n; i++) {
+            char* rc = malloc(n*sizeof(char));
+            for (int j = 0; j < n; j++) {
+                rc[j] = board[i][j];
+            }
+            tmp[i] = rc;
+        }
+        res[(*returnSize) - 1] = tmp;
         return;
     }
     for (int col = 0; col < n; col++) {
