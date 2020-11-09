@@ -12,7 +12,7 @@
 
 char* plusOne(char* _s, int j) {
     char* s = malloc(4*sizeof(char));
-    strcpy(s, _s);
+    memcpy(s, _s, 4*sizeof(char));
     if(s[j] == '9') {
         s[j] = '0';
     } else {
@@ -23,7 +23,7 @@ char* plusOne(char* _s, int j) {
 
 char* minusOne(char* _s, int j) {
     char* s = malloc(4*sizeof(char));
-    strcpy(s, _s);
+    memcpy(s, _s, 4*sizeof(char));
     if(s[j] == '0') {
         s[j] = '9';
     } else {
