@@ -11,8 +11,8 @@
 #include <stdbool.h>
 
 char* plusOne(char* _s, int j) {
-    char* s = malloc(4*sizeof(char));
-    memcpy(s, _s, 4*sizeof(char));
+    char* s = malloc(5*sizeof(char));
+    memcpy(s, _s, 5*sizeof(char));
     if(s[j] == '9') {
         s[j] = '0';
     } else {
@@ -22,8 +22,8 @@ char* plusOne(char* _s, int j) {
 }
 
 char* minusOne(char* _s, int j) {
-    char* s = malloc(4*sizeof(char));
-    memcpy(s, _s, 4*sizeof(char));
+    char* s = malloc(5*sizeof(char));
+    memcpy(s, _s, 5*sizeof(char));
     if(s[j] == '0') {
         s[j] = '9';
     } else {
@@ -32,29 +32,23 @@ char* minusOne(char* _s, int j) {
     return s;
 }
 
-bool contains(char** cstr, int cstrSize, char* s) {
-    bool res = false;
-    for(int i = 0; i < cstrSize; i++) {
-        if(strncmp(cstr[i], s, 4) == 0) {
-            res = true;
-            break;
-        }
-    }
-    return res;
-}
-
 int openLock(char ** deadends, int deadendsSize, char * target){
-    char** queue = malloc(sizeof(char*));
+    char** queue = malloc(10000*sizeof(char*));
     queue[0] = "0000";
-    char** visited = malloc(sizeof(char*));
-    visited[0] = "0000";
-    int index = 0, length = 1, step = 0, visitedSize = 1;
+    int* visited = malloc(10000*sizeof(int));
+    memset(visited, 0, 10000*sizeof(int));
+    for(int i = 0; i < deadendsSize; i++) {
+        visited[atoi(deadends[i])] = 1;
+    }
+    if(visited[atoi("0000")] == 1) return -1;
+    visited[atoi("0000")] = 1;
+    int index = 0, length = 1, step = 0;
     while(index < length) {
         int size = length - index;
         for(int i = 0; i < size; i++) {
             char* curr = queue[index++];
             // 判断是否到的终点
-            if(contains(deadends, deadendsSize, curr)) continue;
+            // if(visited[atoi(curr)] == 1) continue;
             if(strncmp(curr, target, 4) == 0) {
                 free(visited);
                 free(queue);
@@ -63,18 +57,14 @@ int openLock(char ** deadends, int deadendsSize, char * target){
             // 展开
             for(int j = 0; j < 4; j++) {
                 char* up = plusOne(curr, j);
-                if(!contains(visited, visitedSize, up)) {
-                    queue = realloc(queue, (++length)*sizeof(char*));
-                    queue[length-1] = up;
-                    visited = realloc(visited, (++visitedSize)*sizeof(char*));
-                    visited[visitedSize-1] = up;
+                if(visited[atoi(up)] == 0) {
+                    queue[length++] = up;
+                    visited[atoi(up)] = 1;
                 }
                 char* down = minusOne(curr, j);
-                if(!contains(visited, visitedSize, down)) {
-                    queue = realloc(queue, (++length)*sizeof(char*));
-                    queue[length-1] = down;
-                    visited = realloc(visited, (++visitedSize)*sizeof(char*));
-                    visited[visitedSize-1] = down;
+                if(visited[atoi(down)] == 0) {
+                    queue[length++] = down;
+                    visited[atoi(down)] = 1;
                 }
             }
         }
