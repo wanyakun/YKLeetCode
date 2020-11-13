@@ -1,9 +1,9 @@
 # YKLeetCode
 LeetCode 刷题， 语言：C，IDE：XCode
 
-| LeetCode问题                                                 | 源码                                                         | 难度 <img widht=50 />| 标签                                                         |
+| LeetCode问题                                                 | 源码                                                         | 难度 | 标签                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
-| [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [NO3.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO3/NO3.c) | 中等 | [哈希表](https://leetcode-cn.com/tag/hash-table/)、[双指针](https://leetcode-cn.com/tag/two-pointers/)、[字符串](https://leetcode-cn.com/tag/string/)、[Sliding Window](https://leetcode-cn.com/tag/sliding-window/) |
+| [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [NO3.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO3/NO3.c) | 中等难 | [哈希表](https://leetcode-cn.com/tag/hash-table/)、[双指针](https://leetcode-cn.com/tag/two-pointers/)、[字符串](https://leetcode-cn.com/tag/string/)、[Sliding Window](https://leetcode-cn.com/tag/sliding-window/) |
 | [31. 下一个地址](https://leetcode-cn.com/problems/next-permutation/) | [NO31.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO31/NO31.c) | 中等 | [数组](https://leetcode-cn.com/tag/array/)                   |
 | [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [NO34.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO34/NO34.c) | 中等 | [数组](https://leetcode-cn.com/tag/array/)、[二分查找](https://leetcode-cn.com/tag/binary-search/) |
 | [46. 全排列](https://leetcode-cn.com/problems/permutations/) | [NO46.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO46/NO46.c) | 中等 | [回溯算法](https://leetcode-cn.com/tag/backtracking/)        |
