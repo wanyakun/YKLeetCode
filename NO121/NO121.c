@@ -15,7 +15,7 @@ int max(int a, int b) {
 // 方案2
 int maxProfit(int* prices, int pricesSize){
     int dp_i_0 = 0;
-    int dp_i_1 = -INT_MAX;
+    int dp_i_1 = INT_MIN;
     for(int i =0; i < pricesSize; i++) {
         dp_i_0 = max(dp_i_0, dp_i_1 + prices[i]);
         dp_i_1 = max(dp_i_1, -prices[i]);
