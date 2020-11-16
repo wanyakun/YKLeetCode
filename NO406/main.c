@@ -12,7 +12,7 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     int** people = malloc(6*sizeof(int*));
-    people[0] = malloc(2*sizeof(int));
+    people[0] = (int*)malloc(2*sizeof(int));
     people[0][0] = 7;
     people[0][1] = 0;
     people[1] = malloc(2*sizeof(int));
