@@ -1,16 +1,16 @@
 //
-//  NO827.h
-//  NO827
+//  NO242.h
+//  NO242
 //
 //  Created by wanyakun on 2020/11/22.
 //
 
-#ifndef NO827_h
-#define NO827_h
+#ifndef NO242_h
+#define NO242_h
 
 #include <stdio.h>
 #include <stdbool.h>
 
 bool isAnagram(char * s, char * t);
 
-#endif /* NO827_h */
+#endif /* NO242_h */

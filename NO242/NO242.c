@@ -1,11 +1,11 @@
 //
-//  NO827.c
-//  NO827
+//  NO242.c
+//  NO242
 //
 //  Created by wanyakun on 2020/11/22.
 //
 
-#include "NO827.h"
+#include "NO242.h"
 #include "uthash.h"
 #include <stdlib.h>
 #include <string.h>

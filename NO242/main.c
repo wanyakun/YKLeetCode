@@ -1,12 +1,12 @@
 //
 //  main.c
-//  NO827
+//  NO242
 //
 //  Created by wanyakun on 2020/11/22.
 //
 
 #include <stdio.h>
-#include "NO827.h"
+#include "NO242.h"
 #include <stdbool.h>
 
 int main(int argc, const char * argv[]) {
