@@ -60,3 +60,11 @@ LeetCode 刷题， 语言：C，IDE：XCode
 | [1288. 删除被覆盖区间](https://leetcode-cn.com/problems/remove-covered-intervals/) | [NO1288.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO1288/NO1288.c) | 中等 | [贪心算法](https://leetcode-cn.com/tag/greedy/)、[排序](https://leetcode-cn.com/tag/sort/)、[Line Sweep](https://leetcode-cn.com/tag/line-sweep/) |
 | [1356. 根据数字二进制下 1 的数目排序](https://leetcode-cn.com/problems/sort-integers-by-the-number-of-1-bits/) | [NO1356.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO1356/NO1356.c) | 简单 | [排序](https://leetcode-cn.com/tag/sort/)、[位运算](https://leetcode-cn.com/tag/bit-manipulation/) |
 
+
+
+剑指Offer（第二版）
+
+| 剑指Offer问题                                                | 源码                                                         | 难度 | 标签                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
+| [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) | [Offer10-II.c](https://github.com/wanyakun/YKLeetCode/blob/master/Offer10-II/Offer10-II.c) | 简单 | [递归](https://leetcode-cn.com/tag/recursion/)、[动态规划](https://leetcode-cn.com/tag/dynamic-programming/) |
+
