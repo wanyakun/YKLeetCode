@@ -65,6 +65,7 @@ LeetCode 刷题， 语言：C，IDE：XCode
 | [1207. 独一无二的出现次数](https://leetcode-cn.com/problems/unique-number-of-occurrences/) | [NO1207.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO1207/NO1207.c) | 简单 | [哈希表](https://leetcode-cn.com/tag/hash-table/)            |
 | [1288. 删除被覆盖区间](https://leetcode-cn.com/problems/remove-covered-intervals/) | [NO1288.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO1288/NO1288.c) | 中等 | [贪心算法](https://leetcode-cn.com/tag/greedy/)、[排序](https://leetcode-cn.com/tag/sort/)、[Line Sweep](https://leetcode-cn.com/tag/line-sweep/) |
 | [1356. 根据数字二进制下 1 的数目排序](https://leetcode-cn.com/problems/sort-integers-by-the-number-of-1-bits/) | [NO1356.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO1356/NO1356.c) | 简单 | [排序](https://leetcode-cn.com/tag/sort/)、[位运算](https://leetcode-cn.com/tag/bit-manipulation/) |
+| [1370. 上升下降字符串](https://leetcode-cn.com/problems/increasing-decreasing-string/) | [NO1370.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO1370/NO1370.c) | 简单 | [排序](https://leetcode-cn.com/tag/sort/)、[字符串](https://leetcode-cn.com/tag/string/) |
 
 
 
