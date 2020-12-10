@@ -17,6 +17,28 @@ TreeNode* createTreeNode(int val, TreeNode* left, TreeNode* right) {
     return node;
 }
 
+TreeNode* createTreeNodeWithNums(int* nums, int numsSize) {
+    if (numsSize <= 0) {
+        return NULL;
+    }
+    TreeNode* root = malloc(sizeof(TreeNode));
+    root->val = nums[0];
+    TreeNode** stack = malloc(numsSize*sizeof(TreeNode*));
+    stack[0] = root;
+    int index = 0;
+    int top = 1;
+    for (int i = 1; i < numsSize-1; i = i + 2) {
+        TreeNode* indexNode = stack[index];
+        TreeNode* left = createTreeNode(nums[i], NULL, NULL);
+        TreeNode* right = createTreeNode(nums[i+1], NULL, NULL);
+        indexNode->left = left;
+        indexNode->right = right;
+        stack[top++] = left;
+        stack[top++] = right;
+        index++;
+    }
+    return root;
+}
 // 前序遍历，递归
 void preOrderTraverse(TreeNode* root) {
     // base case

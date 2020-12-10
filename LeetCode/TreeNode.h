@@ -17,6 +17,8 @@ struct TreeNode {
 };
 
 TreeNode* createTreeNode(int val, TreeNode* left, TreeNode* right);
+TreeNode* createTreeNodeWithNums(int* nums, int numsSize);
+
 void preOrderTraverse(TreeNode* root);
 void preOrderTraverse1(TreeNode* root);
 void preOrderTraverse11(TreeNode* root);
