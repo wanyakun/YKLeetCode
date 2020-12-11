@@ -103,3 +103,9 @@ LeetCode 刷题， 语言：C，IDE：XCode
 | [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) | [Offer10-II.c](https://github.com/wanyakun/YKLeetCode/blob/master/Offer10-II/Offer10-II.c) | 简单 | [递归](https://leetcode-cn.com/tag/recursion/)、[动态规划](https://leetcode-cn.com/tag/dynamic-programming/) |
 | [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) | [Offer27.c](https://github.com/wanyakun/YKLeetCode/blob/master/Offer27/Offer27.c) | 简单 | [树](https://leetcode-cn.com/tag/tree/)                      |
 
+面试题
+
+| 问题                                                | 源码                                                         | 难度 | 公司 |
+| --------------------------------------------------- | ------------------------------------------------------------ | ---- | ---- |
+| [射击气球](https://www.nowcoder.com/discuss/488619) | [Tencent0001.c](https://github.com/wanyakun/YKLeetCode/blob/master/Tencent0001/Tencent0001.c) | 中等 | 腾讯 |
+
