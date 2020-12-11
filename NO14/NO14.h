@@ -29,5 +29,6 @@
 #include <stdio.h>
 
 char * longestCommonPrefix(char ** strs, int strsSize);
+char * longestCommonPrefix1(char ** strs, int strsSize);
 
 #endif /* NO14_h */

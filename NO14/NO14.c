@@ -34,3 +34,27 @@ char * longestCommonPrefix(char ** strs, int strsSize){
     res[resSize] = '\0';
     return res;
 }
+
+char * longestCommonPrefix1(char ** strs, int strsSize){
+    if(strsSize == 0) return "";
+    if(strsSize == 1) return strs[0];
+
+    int i = 0, j = 0; // 标示公共子串的结束位置
+    for(i = 0; i < strsSize && strs[i][j] != '\0'; i++) {
+        if(strs[i][j] != strs[i+1][j]) {
+            break;
+        }
+        if(i == strsSize-2) {
+            // 比较到最后一个
+            i = -1; //从头开始，比较第二个字符
+            j++;
+        }
+    }
+    char * res = malloc((j+1)*sizeof(char));
+    for(i = 0; i < j; i++) {
+        res[i] = strs[0][i];
+    }
+    res[i] = '\0';
+
+    return res;
+}
