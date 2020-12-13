@@ -45,6 +45,7 @@ LeetCode 刷题， 语言：C，IDE：XCode
 | [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/) | [NO198.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO198/NO198.c) | 简单 | [动态规划](https://leetcode-cn.com/tag/dynamic-programming/) |
 | [204. 计数质数](https://leetcode-cn.com/problems/count-primes/) | [NO204.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO204/NO204.c) | 简单 | [哈希表](https://leetcode-cn.com/tag/hash-table/)、[数学](https://leetcode-cn.com/tag/math/) |
 | [213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/) | [NO213.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO213/NO213.c) | 中等 | [动态规划](https://leetcode-cn.com/tag/dynamic-programming/) |
+| [217. 存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/) | [NO217.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO217/NO217.c) | 简单 | [数组](https://leetcode-cn.com/tag/array/)、[哈希表](https://leetcode-cn.com/tag/hash-table/) |
 | [222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/) | [NO222.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO222/NO222.c) | 中等 | [树](https://leetcode-cn.com/tag/tree/)、[二分查找](https://leetcode-cn.com/tag/binary-search/) |
 | [226. 翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/) | [NO226.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO226/NO226.c) | 简单 | [树](https://leetcode-cn.com/tag/tree/)                      |
 | [242. 有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/) | [NO242.c](https://github.com/wanyakun/YKLeetCode/blob/master/NO242/NO242.c) | 简单 | [排序](https://leetcode-cn.com/tag/sort/)、[哈希表](https://leetcode-cn.com/tag/hash-table/) |
@@ -110,4 +111,5 @@ LeetCode 刷题， 语言：C，IDE：XCode
 | 问题                                                | 源码                                                         | 难度 | 公司 |
 | --------------------------------------------------- | ------------------------------------------------------------ | ---- | ---- |
 | [射击气球](https://www.nowcoder.com/discuss/488619) | [Tencent0001.c](https://github.com/wanyakun/YKLeetCode/blob/master/Tencent0001/Tencent0001.c) | 中等 | 腾讯 |
+| 检测棋盘中车是否相互攻击                            | [Tencent0002.c](https://github.com/wanyakun/YKLeetCode/blob/master/Tencent0002/Tencent0002.c) | 简单 | 腾讯 |
 
