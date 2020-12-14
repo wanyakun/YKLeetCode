@@ -229,6 +229,8 @@
 		57F9770D2583302100FE4009 /* Tencent0001.c in Sources */ = {isa = PBXBuildFile; fileRef = 57F9770C2583302100FE4009 /* Tencent0001.c */; };
 		57F977762583509400FE4009 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 57F977752583509400FE4009 /* main.c */; };
 		57F977DE258350A100FE4009 /* Tencent0002.c in Sources */ = {isa = PBXBuildFile; fileRef = 57F977DD258350A100FE4009 /* Tencent0002.c */; };
+		57F97999258758B200FE4009 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 57F97998258758B200FE4009 /* main.c */; };
+		57F97A05258758BF00FE4009 /* NO49.c in Sources */ = {isa = PBXBuildFile; fileRef = 57F97A04258758BF00FE4009 /* NO49.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1141,6 +1143,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		57F97994258758B200FE4009 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -1568,6 +1579,11 @@
 		57F977752583509400FE4009 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		57F977DC258350A100FE4009 /* Tencent0002.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tencent0002.h; sourceTree = "<group>"; };
 		57F977DD258350A100FE4009 /* Tencent0002.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Tencent0002.c; sourceTree = "<group>"; };
+		57F97996258758B200FE4009 /* NO49 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NO49; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F97998258758B200FE4009 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		57F97A03258758BF00FE4009 /* NO49.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NO49.h; sourceTree = "<group>"; };
+		57F97A04258758BF00FE4009 /* NO49.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = NO49.c; sourceTree = "<group>"; };
+		57F97A6C25875EA300FE4009 /* uthash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uthash.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2272,6 +2288,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		57F977702583509400FE4009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F97993258758B200FE4009 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3288,6 +3311,7 @@
 				572283FC2584F14800A0DFB8 /* NO649 */,
 				572284D0258505D400A0DFB8 /* NO376 */,
 				572285A62586581D00A0DFB8 /* NO217 */,
+				57F97997258758B200FE4009 /* NO49 */,
 				57E5A3892547FC640080A2BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -3396,6 +3420,7 @@
 				572283FB2584F14800A0DFB8 /* NO649 */,
 				572284CF258505D400A0DFB8 /* NO376 */,
 				572285A52586581C00A0DFB8 /* NO217 */,
+				57F97996258758B200FE4009 /* NO49 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3525,6 +3550,17 @@
 				57F977DD258350A100FE4009 /* Tencent0002.c */,
 			);
 			path = Tencent0002;
+			sourceTree = "<group>";
+		};
+		57F97997258758B200FE4009 /* NO49 */ = {
+			isa = PBXGroup;
+			children = (
+				57F97A6C25875EA300FE4009 /* uthash.h */,
+				57F97998258758B200FE4009 /* main.c */,
+				57F97A03258758BF00FE4009 /* NO49.h */,
+				57F97A04258758BF00FE4009 /* NO49.c */,
+			);
+			path = NO49;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5247,6 +5283,23 @@
 			productReference = 57F977732583509400FE4009 /* Tencent0002 */;
 			productType = "com.apple.product-type.tool";
 		};
+		57F97995258758B200FE4009 /* NO49 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F9799C258758B200FE4009 /* Build configuration list for PBXNativeTarget "NO49" */;
+			buildPhases = (
+				57F97992258758B200FE4009 /* Sources */,
+				57F97993258758B200FE4009 /* Frameworks */,
+				57F97994258758B200FE4009 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NO49;
+			productName = NO49;
+			productReference = 57F97996258758B200FE4009 /* NO49 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -5558,6 +5611,9 @@
 					57F977722583509400FE4009 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					57F97995258758B200FE4009 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = 57E5A3832547FC640080A2BE /* Build configuration list for PBXProject "LeetCode" */;
@@ -5674,6 +5730,7 @@
 				572283FA2584F14800A0DFB8 /* NO649 */,
 				572284CE258505D400A0DFB8 /* NO376 */,
 				572285A42586581C00A0DFB8 /* NO217 */,
+				57F97995258758B200FE4009 /* NO49 */,
 			);
 		};
 /* End PBXProject section */
@@ -6605,6 +6662,15 @@
 			files = (
 				57F977762583509400FE4009 /* main.c in Sources */,
 				57F977DE258350A100FE4009 /* Tencent0002.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F97992258758B200FE4009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F97999258758B200FE4009 /* main.c in Sources */,
+				57F97A05258758BF00FE4009 /* NO49.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8338,6 +8404,22 @@
 			};
 			name = Release;
 		};
+		57F9799A258758B200FE4009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		57F9799B258758B200FE4009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -9255,6 +9337,15 @@
 			buildConfigurations = (
 				57F977782583509400FE4009 /* Debug */,
 				57F977792583509400FE4009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F9799C258758B200FE4009 /* Build configuration list for PBXNativeTarget "NO49" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F9799A258758B200FE4009 /* Debug */,
+				57F9799B258758B200FE4009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
