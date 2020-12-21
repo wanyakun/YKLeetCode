@@ -6,9 +6,11 @@
 //
 
 #include <stdio.h>
+#include "Offer10-I.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
+    int res = fib(10);
+    printf("%d \n", res);
     return 0;
 }
