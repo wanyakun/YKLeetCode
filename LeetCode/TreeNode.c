@@ -29,8 +29,8 @@ TreeNode* createTreeNodeWithNums(int* nums, int numsSize) {
     int top = 1;
     for (int i = 1; i < numsSize-1; i = i + 2) {
         TreeNode* indexNode = stack[index];
-        TreeNode* left = createTreeNode(nums[i], NULL, NULL);
-        TreeNode* right = createTreeNode(nums[i+1], NULL, NULL);
+        TreeNode* left = (nums[i] == NULL) ? NULL : createTreeNode(nums[i], NULL, NULL);
+        TreeNode* right = (nums[i+1] == NULL) ? NULL :createTreeNode(nums[i+1], NULL, NULL);
         indexNode->left = left;
         indexNode->right = right;
         stack[top++] = left;
