@@ -96,6 +96,7 @@
 		5769D9D1259B3E0A001587F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5769D9D0259B3E0A001587F7 /* main.cpp */; };
 		5769DA54259B4688001587F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5769DA53259B4688001587F7 /* main.cpp */; };
 		5769DAD8259C13AB001587F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5769DAD7259C13AB001587F7 /* main.cpp */; };
+		5769DB5D259C2312001587F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5769DB5C259C2312001587F7 /* main.cpp */; };
 		576EBD29254FA96100E81854 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 576EBD28254FA96100E81854 /* main.c */; };
 		576EBD3B254FA9C400E81854 /* NO349.c in Sources */ = {isa = PBXBuildFile; fileRef = 576EBD3A254FA9C400E81854 /* NO349.c */; };
 		576EBD5D25500C1E00E81854 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 576EBD5C25500C1E00E81854 /* main.c */; };
@@ -647,6 +648,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		5769DAD3259C13AB001587F7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5769DB58259C2312001587F7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -1544,6 +1554,8 @@
 		5769DA53259B4688001587F7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5769DAD5259C13AB001587F7 /* NO206 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NO206; sourceTree = BUILT_PRODUCTS_DIR; };
 		5769DAD7259C13AB001587F7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5769DB5A259C2312001587F7 /* Offer24 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Offer24; sourceTree = BUILT_PRODUCTS_DIR; };
+		5769DB5C259C2312001587F7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		576EBD26254FA96100E81854 /* NO349 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NO349; sourceTree = BUILT_PRODUCTS_DIR; };
 		576EBD28254FA96100E81854 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		576EBD39254FA9C300E81854 /* NO349.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NO349.h; sourceTree = "<group>"; };
@@ -2164,6 +2176,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5769DAD2259C13AB001587F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5769DB57259C2312001587F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3155,6 +3174,14 @@
 			path = NO206;
 			sourceTree = "<group>";
 		};
+		5769DB5B259C2312001587F7 /* Offer24 */ = {
+			isa = PBXGroup;
+			children = (
+				5769DB5C259C2312001587F7 /* main.cpp */,
+			);
+			path = Offer24;
+			sourceTree = "<group>";
+		};
 		576EBD27254FA96100E81854 /* NO349 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3940,6 +3967,7 @@
 				5769D9CF259B3E0A001587F7 /* NO547 */,
 				5769DA52259B4688001587F7 /* NO42 */,
 				5769DAD6259C13AB001587F7 /* NO206 */,
+				5769DB5B259C2312001587F7 /* Offer24 */,
 				57E5A3892547FC640080A2BE /* Products */,
 				57F976A425832F0200FE4009 /* Tencent0001 */,
 				57F977742583509400FE4009 /* Tencent0002 */,
@@ -4071,6 +4099,7 @@
 				5769D9CE259B3E0A001587F7 /* NO547 */,
 				5769DA51259B4688001587F7 /* NO42 */,
 				5769DAD5259C13AB001587F7 /* NO206 */,
+				5769DB5A259C2312001587F7 /* Offer24 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4945,6 +4974,23 @@
 			name = NO206;
 			productName = NO206;
 			productReference = 5769DAD5259C13AB001587F7 /* NO206 */;
+			productType = "com.apple.product-type.tool";
+		};
+		5769DB59259C2312001587F7 /* Offer24 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5769DB5E259C2312001587F7 /* Build configuration list for PBXNativeTarget "Offer24" */;
+			buildPhases = (
+				5769DB56259C2312001587F7 /* Sources */,
+				5769DB57259C2312001587F7 /* Frameworks */,
+				5769DB58259C2312001587F7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Offer24;
+			productName = Offer24;
+			productReference = 5769DB5A259C2312001587F7 /* Offer24 */;
 			productType = "com.apple.product-type.tool";
 		};
 		576EBD25254FA96100E81854 /* NO349 */ = {
@@ -6427,6 +6473,9 @@
 					5769DAD4259C13AB001587F7 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					5769DB59259C2312001587F7 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					576EBD25254FA96100E81854 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -6801,6 +6850,7 @@
 				5769D9CD259B3E0A001587F7 /* NO547 */,
 				5769DA50259B4688001587F7 /* NO42 */,
 				5769DAD4259C13AB001587F7 /* NO206 */,
+				5769DB59259C2312001587F7 /* Offer24 */,
 			);
 		};
 /* End PBXProject section */
@@ -7191,6 +7241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5769DAD8259C13AB001587F7 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5769DB56259C2312001587F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5769DB5D259C2312001587F7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8602,6 +8660,22 @@
 			name = Debug;
 		};
 		5769DADB259C13AB001587F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5769DB5F259C2312001587F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5769DB60259C2312001587F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -10370,6 +10444,15 @@
 			buildConfigurations = (
 				5769DADA259C13AB001587F7 /* Debug */,
 				5769DADB259C13AB001587F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5769DB5E259C2312001587F7 /* Build configuration list for PBXNativeTarget "Offer24" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5769DB5F259C2312001587F7 /* Debug */,
+				5769DB60259C2312001587F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
