@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  NO156
+//  NO155
 //
 //  Created by wanyakun on 2021/1/4.
 //
@@ -43,9 +43,11 @@
 #include <iostream>
 #include <stack>
 
+using namespace std;
+
 class MinStack {
-    stack<int> x_stack; // 存储栈中的值
-    stack<int> min_stack; // 辅助栈，存储栈中值对应的最小值
+    stack<int> x_stack;
+    stack<int> min_stack;
 public:
     /** initialize your data structure here. */
     MinStack() {
@@ -54,7 +56,7 @@ public:
     
     void push(int x) {
         x_stack.push(x);
-        min_stack.push(min(x, min_stack.top()));
+        min_stack.push(min(min_stack.top(), x));
     }
     
     void pop() {
@@ -70,16 +72,6 @@ public:
         return min_stack.top();
     }
 };
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack* obj = new MinStack();
- * obj->push(x);
- * obj->pop();
- * int param_3 = obj->top();
- * int param_4 = obj->getMin();
- */
-
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
