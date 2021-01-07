@@ -135,6 +135,7 @@ LeetCode 刷题， 语言：C/C++，IDE：XCode
 
 | 剑指Offer问题                                                | 源码                                                         | 难度 | 标签                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
+| [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) | [main.cpp](https://github.com/wanyakun/YKLeetCode/blob/master/Offer07/main.cpp) | 中等 | [树](https://leetcode-cn.com/tag/tree/)、[递归](https://leetcode-cn.com/tag/recursion/) |
 | [剑指 Offer 10- I. 斐波那契数列](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/) | [Offer10-I.c](https://github.com/wanyakun/YKLeetCode/blob/master/Offer10-I/Offer10-I.c) | 简单 | [递归](https://leetcode-cn.com/tag/recursion/)               |
 | [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) | [Offer10-II.c](https://github.com/wanyakun/YKLeetCode/blob/master/Offer10-II/Offer10-II.c) | 简单 | [递归](https://leetcode-cn.com/tag/recursion/)、[动态规划](https://leetcode-cn.com/tag/dynamic-programming/) |
 | [剑指 Offer 09. 用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) | [Offer09.c](https://github.com/wanyakun/YKLeetCode/blob/master/Offer09/Offer09.c) | 简单 | [栈](https://leetcode-cn.com/tag/stack/)、[设计](https://leetcode-cn.com/tag/design/) |
